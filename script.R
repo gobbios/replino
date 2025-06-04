@@ -10,3 +10,6 @@ dev.off()
 # and let's create a smaller table and export it too
 xd <- xdata[1:10, ]
 write.table(xd, "datatab.csv", sep = ",", row.names = FALSE, quote = FALSE)
+
+# do some more stuff
+apply(xdata, 2, median)
